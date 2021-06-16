@@ -1,2 +1,118 @@
-/* Importa o arquivo CSS que importa a fonte Ravie */
-@import "fonts/ravie.css";
+/* EXERCÍCIO 1: fontes */
+/* importá-las aqui... e definir as `font-family` da turminha... */
+
+
+strong {
+  color: #d027aa;
+}
+
+#recipiente {
+  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+}
+
+#cardapio {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #aac0ae;
+  border-bottom: 1px solid #aac0ae;
+  border-left: 1px solid #aac0ae;
+}
+
+#cardapio h3 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 30px;
+}
+
+#cardapio article {
+  font-size: 14px;
+  color: #333;
+}
+
+
+/* EXERCÍCIO 2: layout da página */
+#recipiente {
+  /* layout da página aqui */
+  /* ... */
+  /* ... */
+  /* ... */
+  /* ... */
+}
+
+#cabecalho-pagina {
+
+}
+
+#lateral {
+
+}
+
+#cardapio {
+
+}
+
+#rodape-pagina {
+
+}
+
+
+
+/* EXERCÍCIO 3: cabeçalho da página */
+#cabecalho-pagina {
+
+}
+
+#cabecalho-pagina h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #e90c0c;
+  font-weight: normal;
+}
+
+#cabecalho-pagina h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: normal;
+}
+
+/* EXERCÍCIO 4: cada item do menu */
+article {
+}
+
+
+/* EXERCÍCIO 5: o rodapé */
+#rodape-pagina {
+}
+
+/* EXERCÍCIO 6: lateral */
+#lateral {
+}
+
+
+/* EXERCÍCIO 7: o ticket */
+#ticket {
+}
+
+#ticket:hover {
+}
+
+
+/* EXERCÍCIO 8: deslocamento no siri e peixe */
+#siri {
+}
+
+#peixe {
+}
+
+/* EXERCÍCIO 9: bolhas - no HTML e no JS */
+/* --- */
+
+
+/* EXERCÍCIO 10: modo escuro */
+/* no início deste arquivo (depois dos @import), coloque
+   as custom properties */
+/* coloque aqui a media query para sobrescrever o valor
+   das custom properties para o modo escuro */
+

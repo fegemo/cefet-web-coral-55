@@ -1,36 +1,61 @@
-function loadImage(path) {
-    var img = new Image();
+const TEMPO_MINIMO = 1000;    // 1s em milissegundos
+const TEMPO_VARIAVEL = 3000;  // 3s
+const bolhaEl = carregaUmaImagem('images/bolha.png');
+
+function carregaUmaImagem(path) {
+    const img = new Image();
     img.src = path;
     return img;
 }
-var bubbleEl = loadImage('images/bolha.png');
-function instantiateBubble() {
-    var newBubbleEl = bubbleEl.cloneNode();
-    newBubbleEl.style.position = 'fixed';
-    newBubbleEl.style.transition = 'all 5s linear';
-    newBubbleEl.style.bottom = '-50px';
-    newBubbleEl.style.left = Math.random() * window.innerWidth + 'px';
-    newBubbleEl.style.opacity = 1;
-	newBubbleEl.style.transform = 'scale(' + (Math.random() / 2 + 0.5) + ')';
-    newBubbleEl.style.zIndex = 10000;
 
-    document.body.appendChild(newBubbleEl);
+function getLarguraJanela() {
+  return Math.max(
+    document.body.scrollWidth,
+    document.documentElement.scrollWidth,
+    document.body.offsetWidth,
+    document.documentElement.offsetWidth,
+    document.documentElement.clientWidth
+  );
+}
+
+
+function criaUmaBolha() {
+    const novaBolhaEl = bolhaEl.cloneNode();
+    const posicaoX = Math.random() * getLarguraJanela() + 'px';
+    // Math.random() retorna um número aleatório de 0 até 1
+    // ... daí multiplicamos esse número pela largura da janela
+
+    novaBolhaEl.style.position = 'fixed';
+    novaBolhaEl.style.transition = 'all 5s linear';
+    novaBolhaEl.style.bottom = '-50px';
+    novaBolhaEl.style.left = posicaoX;
+    novaBolhaEl.style.opacity = 1;
+    novaBolhaEl.style.transform = 'scale(' + (Math.random() / 2 + 0.5) + ')';
+
+    document.body.appendChild(novaBolhaEl);
+
     window.setTimeout(function() {
-        newBubbleEl.style.opacity = .5;
-        newBubbleEl.style.bottom = window.innerHeight + 'px';
-    }, 100);
-    (function(oldBubbleEl) {
-    	function removeElement() {
-    		oldBubbleEl.removeEventListener('transitionend', removeElement);
-    		document.body.removeChild(oldBubbleEl);
-    	}
-		oldBubbleEl.addEventListener('transitionend', removeElement);
-    }(newBubbleEl));
+        novaBolhaEl.style.opacity = .5;
+        novaBolhaEl.style.bottom = window.innerHeight + 'px';
+    }, 0);
 
-    window.setTimeout(instantiateBubble, 7000 + Math.random()*5000)
+    // remove o elemento da imagem da bolha assim que sua transição terminar
+    (function(oldbolhaEl) {
+      function removeElement() {
+        oldbolhaEl.removeEventListener('transitionend', removeElement);
+        document.body.removeChild(oldbolhaEl);
+      }
+      oldbolhaEl.addEventListener('transitionend', removeElement);
+    }(novaBolhaEl));
+
+
+    // pelo menos, vai esperar por TEMPO_MINIMO. Mas pode, adicionalmente,
+    // esperar por mais [0%....100%] x TEMPO_VARIAVEL
+    const proximaBolhaDaqui = TEMPO_MINIMO + Math.random()*TEMPO_VARIAVEL;
+    window.setTimeout(criaUmaBolha, proximaBolhaDaqui);
 }
 
 
 
 
-instantiateBubble();
+criaUmaBolha();
