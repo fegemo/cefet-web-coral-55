@@ -51,6 +51,8 @@ Além do alinhamento, note que as _specs_ definem um espaçamento. Para refletir
 
 ### Exercício 4: o cardápio (`#cardapio`)
 
+Primeiramente, repare que deve haver um espaçamento interno em `#cardapio` (conforme _specs_) nas laterais.
+
 Estilize cada item do `#cardápio` (ou seja, cada `article`) de maneira
 a deixar o nome do item à esquerda e o preço à direita - use flexbox
 no `article` para isso.
@@ -83,7 +85,7 @@ lá em baixo: use flexbox.
 ### Exercício 7: _ticket_ (`#ticket`)
 
 Em `index.html` há um código comentado que coloca um ticket na página.
-Descomente esse código e, usando seus conhecimentos da propriedade `position`, estilize-o de maneira que mesmo se a página rolar, ele fique parado, fixado em sua posição, que é centralizada verticalmente.
+Descomente esse código e, usando seus conhecimentos da propriedade `position`, estilize-o de maneira que mesmo se a página rolar, ele fique parado, fixado em sua posição, que é centralizada verticalmente. Pode ser útil saber que a imagem do ticket tem `84px` de altura.
 
 Faça com que ele fique escondido, deslocado `-89px` (à esquera) e,
 quando o mouse passar sobre ele, que ele se revele (ou seja, deslocado `0`).
@@ -152,6 +154,8 @@ Por fim, você deve alterar o HTML para avisar o navegador que a página tem sup
 **PARA TESTAR**: usando a ferramenta do desenvolver, você pode forçar a preferência do usuário para modo escuro ou claro:
 ![Imagem da ferramenta do desenvolvedor mostrando a aba 'Rendering' e a opção para emular um esquema de cores para se testar o modo escuro](roteiro/prefers-color-scheme.png)
 
+Se quiser ver um exemplo dos estilos:
+![Imagem da página do coral em modo escuro](roteiro/exercicio-10.webp)
 
 
 ## <abbr title="Frequently Asked Questions">FAQ</abbr>

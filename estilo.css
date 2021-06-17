@@ -2,6 +2,10 @@
 /* importá-las aqui... e definir as `font-family` da turminha... */
 
 
+body {
+  background-color: #fff;
+}
+
 strong {
   color: #d027aa;
 }
