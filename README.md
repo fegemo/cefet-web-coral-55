@@ -2,7 +2,7 @@
 
 Um cardápio das gostosuras marítimas servidas na Lanchonete do Coral 55.
 
-![Imagem de uma página de um cardápio da 'Lanchonete do Coral 55' com o layout devidamente estilizado](https://fegemo.github.io/cefet-web/images/)
+![Imagem de uma página de um cardápio da 'Lanchonete do Coral 55' com o layout devidamente estilizado](coral55-comp.png)
 
 
 ## Atividade
