@@ -213,7 +213,7 @@ Se quiser ver um exemplo dos estilos:
   [slides sobre Grid][slides-grid].
 - Para incluir um _script_ na página, coloque uma _tag_ 
   `<script src="caminho-para-arquivo.js"></script>` no final do `<body>`, logo antes do `</body>`.
-
+- Para relembrar como criar "variáveis" em CSS, veja os [slides sobre _custom properties_][slides-custom-properties]
 
 
 [centralizacao-vertical]: https://fegemo.github.io/cefet-web/classes/css4/#centralizando-elementos-posicionados
