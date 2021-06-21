@@ -110,7 +110,8 @@ Em `index.html` há um código comentado que coloca um ticket na página.
 Descomente esse código e, usando seus conhecimentos da propriedade `position`,
 estilize-o de maneira que mesmo se a página rolar, ele fique parado, fixado
 em sua posição, que é centralizada verticalmente. Pode ser útil saber que a
-imagem do ticket tem `84px` de altura.
+imagem do ticket tem `84px` de altura. Para lembrar, veja os slides sobre
+centralização de elementos posicionados no [FAQ](#faq).
 
 Faça com que ele fique escondido, deslocado `-89px` (à esquera) e,
 quando o mouse passar sobre ele, que ele se revele (ou seja, deslocado `0`).
@@ -211,6 +212,7 @@ Se quiser ver um exemplo dos estilos:
 - Me esqueci das propriedades do Grid... onde acho? Há um excelente tutorial do
   site CSS Tricks: https://css-tricks.com/snippets/css/complete-guide-grid/. Também tem os
   [slides sobre Grid][slides-grid].
+- Veja os [slides sobre centralização de elementos posicionados][centralizacao-vertical].
 - Para incluir um _script_ na página, coloque uma _tag_ 
   `<script src="caminho-para-arquivo.js"></script>` no final do `<body>`, logo antes do `</body>`.
 - Para relembrar como criar "variáveis" em CSS, veja os [slides sobre _custom properties_][slides-custom-properties]
